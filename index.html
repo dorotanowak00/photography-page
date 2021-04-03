@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <script src="JavaScript/insert_images.js"></script>
+
   </head>
 
   <body>
@@ -32,15 +34,22 @@
     </section>
 
     <section class="grid">
+
       <div>
         <h3>zdjęcia na białym tle</h3>
         <p>Klasyczna fotografia typu packshot, zdjęcia tego typu są pożądane przez większość platform aukcyjnych czy e-commerce takich jak: Allegro, Amazon, Ebay.</p>
       </div>
-      <div>
-        <img src="img/img1.jpg" alt="img1">
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10092;</a>
-        <a class="next" onclick="plusSlides(1)">&#10093;</a>
+
+
+      <div id="gallery_wrap">
+        <div id="gallery1">
+          <img src="img/img1.jpg" alt="img1" onload="gallery1()" id="images1">
+        </div>
+        <div id="child">
+          <a class="prev" id="prev" onclick="prev()">&#10092;</a>
+          <a class="next" id="next" onclick="next()">&#10093;</a>
+        </div>
+
       </div>
 
       <div>
@@ -60,12 +69,17 @@
         <img src="img/img3.jpg" alt="img3">
       </div>
 
+    </section>
 
+    <section id="js">
 
     </section>
+
     <footer>
 			<p>All rights reserved</p>
 			<!-- <a href="#top">Back to top &raquo;</a> -->
 		</footer>
+    <script src="JavaScript/gallery.js"></script>
   </body>
+
 </html>
