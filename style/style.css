@@ -160,11 +160,21 @@ a:hover {
   left: 0;
 }
 
-#gallery_wrap {
+#gallery_wrap1,
+#gallery_wrap2,
+#gallery_wrap3 {
   position: relative;
 }
 
-#child {
+#remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#buttons1,
+#buttons2,
+#buttons3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,6 +207,8 @@ a.prev:hover, a.next:hover {
     grid-gap: 20px 15px;
   }
 }
+
+/* media queries */
 
 @media (min-width: 992px) {
   section {
@@ -249,4 +261,24 @@ a.prev:hover, a.next:hover {
     font-size: 35px;
     letter-spacing: 2px;
   }
+}
+
+/* key frames */
+@keyframes animation {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.animation {
+  animation: animation 1.5s;
+  opacity: 0;
+}
+
+@keyframes animation2 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animation2 {
+  animation: animation2 2s;
 }
