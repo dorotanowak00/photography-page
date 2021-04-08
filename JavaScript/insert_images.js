@@ -9,6 +9,7 @@ images_white[1].src = 'img/white/img2.jpg';
 images_white[2] = new Image();
 images_white[2].src = 'img/white/img3.jpg';
 
+
 images_stylized[0] = new Image();
 images_stylized[0].src = 'img/stylized/img1.jpg';
 images_stylized[1] = new Image();

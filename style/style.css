@@ -109,13 +109,25 @@ div p {
 }
 
 a:hover {
-  text-decoration-line: underline;
   color: #3C3F66;
+  border-bottom: 2px solid rgb(179, 175, 182);
+  /*transition: border-bottom .5s ease;*/
+  animation: nav_animation 0.5s ease;
+
 }
 
+@keyframes nav_animation {
+  from {border-bottom: solid 2px rgba(179, 175, 182, 0);
+        padding-bottom: 5px;
+  }
+  to {border-bottom: solid 2px rgba(179, 175, 182, 1);
+      padding-bottom: 0px;
+  }
+};
+
 .about_us {
-  padding-bottom: 40px;
-  margin-top: -30px;
+  padding-bottom: 20px;
+  margin-top: -20px;
 }
 
 .grid {
@@ -123,7 +135,7 @@ a:hover {
   display: grid;
   grid-template-columns: 450px;
   /* grid-templates-rows: 100px 200px 200px; */
-  grid-gap: 20px 15px;
+  grid-gap: 5px 5px;
 }
 
 .top {
@@ -142,7 +154,7 @@ a:hover {
 .prev, .next {
   display: block;
   position: absolute;
-  top:130px;
+  top:185px;
   cursor: pointer;
   width: 30px;
   height: 50px;
@@ -186,7 +198,12 @@ a.prev:hover, a.next:hover {
 
 }
 
-/* media queries */
+
+
+
+/* ---media queries--- */
+
+
 @media (min-width: 768px) {
 
   section {
@@ -199,16 +216,17 @@ a.prev:hover, a.next:hover {
     margin: auto;
   }
 
+
   .grid {
     max-width: 700px;
     display: grid;
     grid-template-columns: 700px;
     /* grid-templates-rows: 100px 200px 200px; */
-    grid-gap: 20px 15px;
+    grid-gap: 5px 5px;
   }
 }
 
-/* media queries */
+
 
 @media (min-width: 992px) {
   section {
@@ -231,11 +249,28 @@ a.prev:hover, a.next:hover {
     margin: auto;
   }
 
+  .item1, .item3, .item5 {
+    box-sizing: border-box;
+    padding: 30px;
+  };
+
+
+  .item1 {grid-area: one; }
+  .item2 {grid-area: two; }
+  .item3 {grid-area: three; }
+  .item4 {grid-area: four; }
+  .item5 {grid-area: five; }
+  .item6 {grid-area: six; }
+
   .grid {
+    grid-template-areas: 
+    'one two'
+    'four three'
+    'five six';
     max-width: 915px;
     display: grid;
     grid-template-columns: 450px 450px;
-    grid-gap: 20px 15px;
+    grid-gap: 5px 5px;
 
   }
   .top {
@@ -282,3 +317,5 @@ a.prev:hover, a.next:hover {
 .animation2 {
   animation: animation2 2s;
 }
+
+
