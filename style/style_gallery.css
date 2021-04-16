@@ -56,9 +56,10 @@ img {
 }
 
 footer {
-  height: 35px;
-  margin-top:50px;
-  background-color: lightgrey;
+	position: absolute;
+	height: 35px;
+	margin-top:50px;
+	background-color: lightgrey;
 }
 
 footer p {
@@ -112,6 +113,10 @@ a:hover {
 
 }
 
+a {
+  animation: nav_animation_reverse 0.5s ease;
+}
+
 @keyframes nav_animation {
   from {border-bottom: solid 2px rgba(179, 175, 182, 0);
         padding-bottom: 5px;
@@ -121,7 +126,14 @@ a:hover {
   }
 }
 
-
+@keyframes nav_animation_reverse {
+  from {border-bottom: solid 2px rgba(179, 175, 182, 1);
+        padding-bottom: 0px;
+  }
+  to {border-bottom: solid 2px rgba(179, 175, 182, 0);
+      padding-bottom: 5px;
+  }
+}
 
 /*.grid {
   max-width: 450px;

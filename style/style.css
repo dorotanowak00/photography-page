@@ -112,12 +112,25 @@ a:hover {
 
 }
 
+a {
+  animation: nav_animation_reverse 0.5s ease;
+}
+
 @keyframes nav_animation {
   from {border-bottom: solid 2px rgba(179, 175, 182, 0);
         padding-bottom: 5px;
   }
   to {border-bottom: solid 2px rgba(179, 175, 182, 1);
       padding-bottom: 0px;
+  }
+}
+
+@keyframes nav_animation_reverse {
+  from {border-bottom: solid 2px rgba(179, 175, 182, 1);
+        padding-bottom: 0px;
+  }
+  to {border-bottom: solid 2px rgba(179, 175, 182, 0);
+      padding-bottom: 5px;
   }
 }
 
