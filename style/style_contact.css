@@ -2,6 +2,10 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+a.preload {
+animation-duration: 0s !important;
+-webkit-animation-duration: 0s !important;
+transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
 
 body {
   margin: 0;
@@ -105,14 +109,14 @@ div p {
   text-align: center;
 }
 
-a {
-  animation: nav_animation_reverse 0.5s ease;
-}
-
 a:hover {
   color: #3C3F66;
   border-bottom: 2px solid rgb(179, 175, 182);
   animation: nav_animation 0.5s ease;
+}
+
+a {
+  animation: nav_animation_reverse 0.5s ease;
 }
 
 @keyframes nav_animation {
