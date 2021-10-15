@@ -3,6 +3,9 @@
   <head>
     <!-- <meta charset="UTF-8" /> -->
     <title>Fotografia produktowa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
@@ -11,77 +14,76 @@
   </head>
 
   <body>
+      <section class="top">
+        <section class="grid_top">
+          <header>
+            <h1>Fotografia produktowa<br>Michał Wiltosz</h1>
+          </header>
 
-    <section class="top">
-      <section class="grid_top">
-        <header>
-          <h1>Fotografia produktowa<br>Michał Wiltosz</h1>
-        </header>
-
-        <nav>
-          <ul>
-            <li><a href="index.html" class="preload" id="animation1">Home</a></li>
-            <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
-            <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="preload" id="animation1">Home</a></li>
+              <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
+              <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
+            </ul>
+          </nav>
+        </section>
       </section>
-    </section>
+    <section class="wrapper">
+      <section class="about_us">
+        <h2>Czym się zajmujemy?</h2>
+        <p>Jesteśmy firmą działającą na terenie Katowic i Gliwic, zajmujemy się fotografią produktową, fotografią typu packshot oraz sesjami z modelami. Będzie nam niezwykle miło świadczyć dla Państwa usługi, zapraszamy do zapoznania się z naszą ofertą oraz portfolio.</p>
+      </section>
 
-    <section class="about_us">
-      <h2>Czym się zajmujemy?</h2>
-      <p>Jesteśmy firmą działającą na terenie Katowic i Gliwic, zajmujemy się fotografią produktową, fotografią typu packshot oraz sesjami z modelami. Będzie nam niezwykle miło świadczyć dla Państwa usługi, zapraszamy do zapoznania się z naszą ofertą oraz portfolio.</p>
-    </section>
+      <section class="grid">
 
-    <section class="grid">
-
-      <div class="item1">
-        <h3>zdjęcia na białym tle</h3>
-        <p>Klasyczna fotografia typu packshot, zdjęcia tego typu są pożądane przez większość platform aukcyjnych czy e-commerce takich jak: Allegro, Amazon, Ebay.</p>
-      </div>
-
-      <div id="gallery_wrap1"  class="item2">
-        <div id="gallery_white">
-          <img src="img/white/img1.jpg" alt="img1" onload="gallery('white')" id="images_white">
+        <div class="item1">
+          <h3>zdjęcia na białym tle</h3>
+          <p>Klasyczna fotografia typu packshot, zdjęcia tego typu są pożądane przez większość platform aukcyjnych czy e-commerce takich jak: Allegro, Amazon, Ebay.</p>
         </div>
-        <div id="buttons1">
-          <a class="prev" onclick="prev('white')">&#10092;</a>
-          <a class="next" onclick="next('white')">&#10093;</a>
-        </div>
-      </div>
 
-      <div  class="item3">
-        <h3>zdjęcia stylizowane</h3>
-        <p>Dla klientów szukających bardziej spersonalizowanego produktu oferujemy sesje stylizowane – szukasz sesji w stylu urbex? A może delikatnej i kobiecej w stylu boho? Skontaktuj się z nami, pomożemy!</p>
-      </div>
-
-      <div id="gallery_wrap2" class="item4">
-        <div id="gallery_stylized">
-          <img src="img/img2.jpg" alt="img2" onload="gallery('stylized')" id="images_stylized">
+        <div id="gallery_wrap1"  class="item2">
+          <div id="gallery_white">
+            <img src="img/white/img1.jpg" alt="img1" onload="gallery('white')" id="images_white">
+          </div>
+          <div id="buttons1">
+            <a class="prev" onclick="prev('white')">&#10092;</a>
+            <a class="next" onclick="next('white')">&#10093;</a>
+          </div>
         </div>
-        <div id="buttons2">
-          <a class="prev" onclick="prev('stylized')">&#10092;</a>
-          <a class="next" onclick="next('stylized')">&#10093;</a>
-        </div>
-      </div>
-    
-      <div class="item5">
-        <h3>zdjęcia z modelem</h3>
-        <p>W naszej ofercie mamy również sesje z modelkami i modelami. Możemy przedstawić Państwa produkt w naturalnym otoczeniu bądź w stylizowanej sesji w studiu – wybór należy do Was!</p>
-      </div>
 
-      <div id="gallery_wrap3" class="item6">
-        <div id="gallery_model">
-          <img src="img/img3.jpg" alt="img3" onload="gallery('model')" id="images_model">
+        <div  class="item3">
+          <h3>zdjęcia stylizowane</h3>
+          <p>Dla klientów szukających bardziej spersonalizowanego produktu oferujemy sesje stylizowane – szukasz sesji w stylu urbex? A może delikatnej i kobiecej w stylu boho? Skontaktuj się z nami, pomożemy!</p>
         </div>
-        <div id="buttons3">
-          <a class="prev" onclick="prev('model')">&#10092;</a>
-          <a class="next" onclick="next('model')">&#10093;</a>
+
+        <div id="gallery_wrap2" class="item4">
+          <div id="gallery_stylized">
+            <img src="img/img2.jpg" alt="img2" onload="gallery('stylized')" id="images_stylized">
+          </div>
+          <div id="buttons2">
+            <a class="prev" onclick="prev('stylized')">&#10092;</a>
+            <a class="next" onclick="next('stylized')">&#10093;</a>
+          </div>
         </div>
-      </div>
+      
+        <div class="item5">
+          <h3>zdjęcia z modelem</h3>
+          <p>W naszej ofercie mamy również sesje z modelkami i modelami. Możemy przedstawić Państwa produkt w naturalnym otoczeniu bądź w stylizowanej sesji w studiu – wybór należy do Was!</p>
+        </div>
 
-    </section>
+        <div id="gallery_wrap3" class="item6">
+          <div id="gallery_model">
+            <img src="img/img3.jpg" alt="img3" onload="gallery('model')" id="images_model">
+          </div>
+          <div id="buttons3">
+            <a class="prev" onclick="prev('model')">&#10092;</a>
+            <a class="next" onclick="next('model')">&#10093;</a>
+          </div>
+        </div>
 
+      </section>
+  </section>
     <footer>
 			<p>All rights reserved</p>
 			<!-- <a href="#top">Back to top &raquo;</a> -->
