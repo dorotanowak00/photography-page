@@ -170,8 +170,46 @@ footer p {
 }
 
 
+/* MEDIA QUERIES */
 
+/* zacząć od wycentrowania images */
 
+@media (min-width: 768px) {
+  h2.title {
+    font-size: 35px;
+    font-weight: 200;
+  }
+
+  section.selection_buttons button {
+    font-size: 15px;
+  }
+
+  div.wrapper {
+    width: 90vw;
+  }
+
+  div.images {
+    width: 90vw;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    max-width: 43vw;
+  }
+
+  div.img_container {
+    width: 100%;
+    max-width: 43vw;
+    margin-right: 10px;
+    float: left;
+  }
+
+  div.img_background {
+    width: 100%;
+    max-width: 43vw;
+  }
+}
 
 
 
