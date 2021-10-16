@@ -232,9 +232,15 @@ footer p {
 
 
 @media (min-width: 540px) {
+  
+  header h1 {
+    font-size: 20px;
+  }
+  
   .wrapper {
     width: 85vw;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -263,7 +269,8 @@ footer p {
 
   .top h1 {
     padding: 3px 0 10px;
-    }
+  }
+
 
   .wrapper {
     width: 75vw;
@@ -297,9 +304,8 @@ footer p {
     'one two'
     'four three'
     'five six';
-    max-width: 915px;
     display: grid;
-    grid-template-columns: 450px 450px;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px 5px;
   }
 
@@ -308,7 +314,6 @@ footer p {
   }
 
   div {
-    width: 450px;
     margin: auto;
   }
 
