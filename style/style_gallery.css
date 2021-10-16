@@ -122,12 +122,12 @@ div.images {
 div.img_container {
   color: transparent;
   position: relative;
+  margin-bottom: 10px;
 }
 
 div.images img {
   width: 95vw;
   display: block;
-  margin-bottom: 10px;
 }
 
 div.img_background {
@@ -172,16 +172,20 @@ footer p {
 
 /* MEDIA QUERIES */
 
-/* zacząć od wycentrowania images */
+@media (min-width: 540px) {
+  
+  header h1 {
+    font-size: 20px;
+  }
 
-@media (min-width: 768px) {
   h2.title {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 200;
   }
 
   section.selection_buttons button {
-    font-size: 15px;
+    font-size: 13px;
+    margin-bottom: 15px;
   }
 
   div.wrapper {
@@ -190,27 +194,48 @@ footer p {
 
   div.images {
     width: 90vw;
-    text-align: center;
   }
 
-  img {
+  div.images img {
     width: 100%;
-    max-width: 43vw;
   }
 
   div.img_container {
-    width: 100%;
-    max-width: 43vw;
-    margin-right: 10px;
+    width: calc(50% - 5px);
     float: left;
+    margin-bottom: 10px;
+  }
+
+  div.img_container:nth-child(odd) {
+    margin-right: 10px;
   }
 
   div.img_background {
     width: 100%;
-    max-width: 43vw;
   }
+
 }
 
+@media (min-width: 992px) {
+
+  div.wrapper {
+    width: 85vw;
+  }
+
+  div.images {
+    width: 85vw;
+  }
+
+  div.img_container {
+    width: calc(33% - 8px); /* 33% - (2*12px/3) */
+    margin-right: 12px;
+  }
+
+  div.img_container:nth-child(3n) {
+    margin-right: 0;
+  }
+
+}
 
 
 
