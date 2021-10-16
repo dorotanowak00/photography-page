@@ -5,6 +5,8 @@
   margin: 0;
 }
 
+/* TOP WITH NAVIGATION */
+
 a.preload {
 animation-duration: 0s !important;
 -webkit-animation-duration: 0s !important;
@@ -14,20 +16,10 @@ body {
   width: 100%;
 }
 
-.wrapper {
-  width: 95vw;
-  margin: auto;
-}
-
 .top {
   background-image: linear-gradient(lightgrey, transparent 100%);
   height: 120px;
   width: 100%;
-}
-
-section.about_us {
-  width: 100%;
-  /* margin: auto; */
 }
 
 header {
@@ -69,67 +61,6 @@ nav a {
   color: grey;
 }
 
-div.item1 {
-  width: 95vw;
-  margin: auto;
-  position: relative;
-}
-
-img {
-  max-width: 95vw;
-  display: block;
-  margin: auto;
-}
-
-footer {
-  height: 35px;
-  margin-top:50px;
-  background-color: lightgrey;
-}
-
-footer p {
-  padding-top: 5px;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 25px;
-  color: #3C3F66;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-h3 {
-  font-weight: 300;
-  font-size: 25px;
-  color: #3C3F66;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0 10px 0;
-}
-
-p {
-  color: grey;
-  text-align: center;
-  padding: 0;
-  margin: auto;
-  width: 100%;
-  letter-spacing: 0.7px;
-  line-height: 1.8;
-}
-
-div p {
-  width: 100%;
-  vertical-align: middle;
-  padding: 0 ;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 nav a:hover {
   color: #3C3F66;
   border-bottom: 2px solid rgb(179, 175, 182);
@@ -160,57 +91,83 @@ a {
   }
 }
 
-.about_us {
+/* CONTENT */
+
+/* OPISY */
+
+.wrapper {
+  width: 95vw;
+  margin: auto;
+}
+
+section.about_us {
+  width: 100%;
   padding-bottom: 20px;
   margin-top: 0px;
 }
 
+section.about_us h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #3C3F66;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+section.about_us p,
+section.grid p {
+  font-size: 13px;
+  color: grey;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  letter-spacing: 0.7px;
+  line-height: 1.8;
+  vertical-align: middle;
+}
+
 .grid {
-  max-width: 95vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 5px 5px;
   margin: auto;
 }
 
-
-
-.buttons {
-  position: absolute;
-  height: 363.83px;
-}
-
-.prev, .next {
-  display: block;
-  position: absolute;
-  top:185px;
-  cursor: pointer;
-  width: 30px;
-  height: 50px;
-  margin: auto;
+section.grid h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #3C3F66;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   text-align: center;
-  padding-top: 30px;
-  transition: background-color 0.6s ease;
+  margin: 0;
+  padding: 20px 0 10px 0;
 }
 
-.next {
-  right: 0;
+
+
+/* ZDJECIA */
+
+
+/* div.item1 {
+  margin: auto;
+  position: relative;
+} */
+
+section.grid img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
-.prev {
-  left: 0;
-}
 
 #gallery_wrap1,
 #gallery_wrap2,
 #gallery_wrap3 {
   position: relative;
-}
-
-#remove {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #buttons1,
@@ -221,11 +178,64 @@ a {
   left: 0;
 }
 
-a.prev:hover, a.next:hover {
-  background-color: rgba(225, 225, 208, 0.5);
-  text-decoration: none;
+/* nie ma takiej klasy */
+/* .buttons {
+  position: absolute;
+  height: 363.83px;
+} */
+
+/* .prev, .next {
+  display: block;
+  position: absolute;
+  top:185px;
+  cursor: pointer;
+  width: 30px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+  transition: background-color 0.6s ease;
+} */
+.prev, .next {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(225, 225, 208, 0.05);
+  transition: 0.6s ease;
+  
 }
 
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+
+/* #remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.prev:hover, .next:hover {
+  background-color: rgba(225, 225, 208, 0.5);
+}
+
+footer {
+  height: 35px;
+  margin-top:50px;
+  background-color: lightgrey;
+}
+
+footer p {
+  padding-top: 5px;
+}
 
 
 
