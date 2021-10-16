@@ -152,11 +152,6 @@ section.grid h3 {
 /* ZDJECIA */
 
 
-/* div.item1 {
-  margin: auto;
-  position: relative;
-} */
-
 section.grid img {
   max-width: 100%;
   display: block;
@@ -170,13 +165,13 @@ section.grid img {
   position: relative;
 }
 
-#buttons1,
+/* #buttons1,
 #buttons2,
 #buttons3 {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 /* nie ma takiej klasy */
 /* .buttons {
@@ -216,13 +211,6 @@ section.grid img {
   left: 0;
 }
 
-
-/* #remove {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
 .prev:hover, .next:hover {
   background-color: rgba(225, 225, 208, 0.5);
 }
@@ -230,6 +218,7 @@ section.grid img {
 footer {
   height: 35px;
   margin-top:50px;
+  text-align: center;
   background-color: lightgrey;
 }
 
@@ -242,61 +231,59 @@ footer p {
 /* ---media queries--- */
 
 
-@media (min-width: 768px) {
-
-  section {
-    width: 700px;
-    margin: auto;
-  }
-
-  div.item1 {
-    width: 700px;
-    margin: auto;
-  }
-
-
-  .grid {
-    max-width: 700px;
-    display: grid;
-    grid-template-columns: 700px;
-    /* grid-templates-rows: 100px 200px 200px; */
-    grid-gap: 5px 5px;
+@media (min-width: 540px) {
+  .wrapper {
+    width: 85vw;
   }
 }
 
+@media (min-width: 768px) {
+
+ section.about_us h2 {
+   margin-bottom: 10px;
+ }
+
+}
 
 
 @media (min-width: 992px) {
 
-  .about_us {
+  .top {
+    height: 80px;
+  }
+
+  .grid_top {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    max-width: 915px;
+    grid-column-gap: 15px;
+    padding-top: 10px;
+  }
+
+  .top h1 {
+    padding: 3px 0 10px;
+    }
+
+  .wrapper {
+    width: 75vw;
+  }
+
+  section.about_us {
     margin-top: -20px;
   }
 
-  section {
-    width: 915px;
-    margin: auto;
+  section.about_us h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    letter-spacing: 2px;
   }
 
-  div {
-    width: 450px;
-    margin: auto;
-  }
-
-  div p {
+  section.about_us p,
+  section.grid p {
+    font-size: 15px;
     text-align: justify;
   }
-
-  img {
-    max-width: 450px;
-    display: block;
-    margin: auto;
-  }
-
-  .item1, .item3, .item5 {
-    box-sizing: border-box;
-    padding: 30px;
-  }
-
 
   .item1 {grid-area: one; }
   .item2 {grid-area: two; }
@@ -314,34 +301,19 @@ footer p {
     display: grid;
     grid-template-columns: 450px 450px;
     grid-gap: 5px 5px;
-
-  }
-  .top {
-    height: 80px;
   }
 
-  .grid_top {
-    display: grid;
-    grid-template-columns: 450px 450px;
-    max-width: 915px;
-    grid-column-gap: 15px;
-    padding-top: 10px;
+  section.grid h3 {
+    font-size: 25px;
   }
 
-  h1 {
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 3px;
-    }
-  h2 {
-    margin-top: 60px;
-    font-size: 35px;
-    letter-spacing: 2px;
-  }
-
-  div.item1 {
+  div {
     width: 450px;
+    margin: auto;
+  }
+
+  .item1, .item3, .item5 {
+    padding: 30px;
   }
 }
 
