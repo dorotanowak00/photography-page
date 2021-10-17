@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style_gallery.css">
+    <link rel="stylesheet" href="style/style_gallery-tipi.css">
     <script src="JavaScript/animation.js"></script>
+    <script src="JavaScript/gallery_page.js"></script>
   </head>
 
   <body>
@@ -32,59 +33,31 @@
 
     <div class="wrapper">
 
-      <h2 class="title">NASZE REALIZACJE</h2>
-      <section class="selection_buttons">
-        <button>Wszystkie</button>
-        <button>Packshot</button>
-        <button>Sesje z modelem</button>
-        <button>Stylizowane</button>
-      </section>
+      <h2 class="title">TIPI</h2>
+ 
     
       <div class="images clearfix">
-        <div class="img_container">
-          <img src="img/test1.jpg">
-          <div class="img_background"><p>Test 1</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test2.jpg">
-          <div class="img_background"><p>Test 2</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test3.jpg">
-          <div class="img_background"><p>Test 3</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test4.jpg">
-          <div class="img_background"><p>Test 4</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test5.jpg">
-          <div class="img_background"><p>Test 5</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test6.jpg">
-          <div class="img_background"><p>Test 6</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test7.jpg">
-          <div class="img_background"><p>Test 7</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test8.jpg">
-          <div class="img_background"><p>Test 8</p></div>
-        </div>
-        <div class="img_container">
-          <img src="img/test9.jpg">
-          <div class="img_background"><p>Test 9</p></div>
-        </div>
-      
+        <img src="img/test1.jpg" alt="" id="1" class="image" onclick="openModal('img/test1.jpg', 1)">
+        <img src="img/test2.jpg" alt="" id="2" class="image">
+        <img src="img/test3.jpg" alt="" id="3" class="image">
+        <img src="img/test4.jpg" alt="" id="4" class="image">
+        <img src="img/test5.jpg" alt="" id="5" class="image">
+        <img src="img/test6.jpg" alt="" id="6" class="image">
+        <img src="img/test7.jpg" alt="" id="7" class="image">
+        <img src="img/test8.jpg" alt="" id="8" class="image">
+        <img src="img/test9.jpg" alt="" id="9" class="image">
       </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div id="modal">
     </div>
 
   	<footer>
 			<p>All rights reserved</p>
 		</footer>
-    <script src="gallery_page.js"></script>
+
    </body>
 
 </html>
