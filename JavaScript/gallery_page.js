@@ -44,7 +44,7 @@ function next() {
 
     modal.innerHTML = `
     <div class="image-container">
-        <img src="${nextImgSrc}" id="${nextImgId}">
+        <img src="${nextImgSrc}" id="${nextImgId}" class="animation-left">
         <button class="prev" onclick="prev()">&#10092</button>
         <button class="next" onclick="next()">&#10093</button>
     </div>

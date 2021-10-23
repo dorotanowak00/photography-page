@@ -329,7 +329,7 @@ footer p {
 }
 
 .animation {
-  animation: animation 1.5s;
+  animation: animation 5s; /*oryginalnie 1.5s*/
   opacity: 0;
 }
 
@@ -339,7 +339,14 @@ footer p {
 }
 
 .animation2 {
-  animation: animation2 2s;
+  animation: animation2 5s;/*oryginalnie 2s*/
 }
+
+#remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 

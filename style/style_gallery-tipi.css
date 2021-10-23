@@ -262,3 +262,35 @@ div#modal span:hover {
   display: table;
 }
 
+
+
+/* SLIDES ANIMATIONS */
+
+@keyframes slide-left-new {
+  from {right: 0%}
+  to {right: 50%}
+}
+
+.animation-left-new {
+  animation: slide-left-new 2s;
+}
+
+@keyframes slide-left-old {
+  from {left: 50%}
+  to {left: 0%}
+}
+
+.animation-left-old {
+  animation: slide-left-old 2s;
+}
+
+
+
+@keyframes animation-right {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animation2 {
+  animation: animation2 2s;
+}
