@@ -52,16 +52,17 @@
       </section>
 
       <section class="form">
-        <form>
+        <!-- <form method="post" action="https://formsubmit.co/dorota.nowak00@gmail.com"> -->
+        <form method="post" action="PHP/email.php">
           <label for="name">Imię i nazwisko</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" value="Michal">
           <label for="mail">E-mail</label>
-          <input type="email" name="mail" id="mail">
+          <input type="email" name="email" id="mail" value="wiltosz@gmail.com">
           <label for="title">Temat wiadomości</label>
-          <input type="text" name="title" id="title">
+          <input type="text" name="title" id="title" value="dla doroty">
           <label for="message">Treść wiadomości</label>
-          <textarea type="text" name="message" id="message"></textarea> 
-          <input type="button" value="WYŚLIJ" id="button">
+          <textarea type="text" name="message" id="message" value="kocham cie"></textarea> 
+          <input type="submit" value="WYŚLIJ" id="button">
         </form>
       </section>
     </section>
