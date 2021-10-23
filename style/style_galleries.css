@@ -200,17 +200,16 @@ div#modal span:hover {
 
   div.images {
     width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
   div.images img {
-    width: calc(50% - 5px);
-    float: left;
-    margin-bottom: 10px;
-  }
-
-  div.images img:nth-child(odd) {
-    margin-right: 10px;
-  }
+    object-fit: cover;
+    width: 100%;
 
 }
 
@@ -243,23 +242,15 @@ div#modal span:hover {
 
   div.images {
     width: 85vw;
-  }
-
-  div.images img {
-    width: calc(33% - 8px); /* 33% - (2*12px/3) */
-    margin-right: 12px;
-  }
-
-  div.images img:nth-child(3n) {
-    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 
