@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/2d240f20a3.js" crossorigin="anonymous"></script>
     <script src="JavaScript/animation.js"></script>
     <link rel="stylesheet" href="style/style_contact.css">
+
+    
   </head>
 
   <body class="preload">
@@ -52,7 +54,6 @@
       </section>
 
       <section class="form">
-        <!-- <form method="post" action="https://formsubmit.co/dorota.nowak00@gmail.com"> -->
         <form method="post" action="PHP/email.php">
           <label for="name">Imię i nazwisko</label>
           <input type="text" name="name" id="name" value="Michal">
@@ -66,12 +67,15 @@
         </form>
       </section>
     </section>
+    <div id="googleMap" style="width:100%;height:400px;"></div>
   	<footer>
 			<p>All rights reserved</p>
-			<!-- <a href="#top">Back to top &raquo;</a> -->
 		</footer>
+
     <script src="JavaScript/navigation_animation.js"></script>
     <script src="JavaScript/form.js"></script>
+    <script src="JavaScript/googleMap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_AgLx6ARMMqKNJx-v_mCCxItWggWF-7M&callback=myMap"></script>
    </body>
 
 </html>

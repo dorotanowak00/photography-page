@@ -56,7 +56,7 @@ img {
 
 footer {
   height: 35px;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   background-color: lightgrey;
   width: 100%;
 }
@@ -252,9 +252,6 @@ input:invalid:required {
     min-height: calc(100vh - 70px - 120px);
   }
 
-  footer {
-    
-  }
    
 }
 
