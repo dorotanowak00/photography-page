@@ -4,13 +4,6 @@ let galleries = [...document.getElementsByClassName('img_container')];
 
 let buttons = [...document.getElementsByTagName('button')];
 
-// let allButton = document.getElementById('all');
-// let packshotButton = document.getElementById('packshot');
-// let modelButton = document.getElementById('model');
-// let stylizedButton = document.getElementById('stylized');
-
-
-
 filter = (e) => {
     galleries.forEach(item => item.style.display = "block");
     let button = e.target;
