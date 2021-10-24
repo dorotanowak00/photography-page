@@ -1,11 +1,23 @@
+div.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  padding-bottom: 50px;
+}
+
 footer {
-    height: 35px;
-    margin-top:50px;
-    text-align: center;
-    background-color: #1F3044;
-    color: #d9b45e;;
+  position: absolute;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  margin-top:50px;
+  text-align: center;
+  background-color: #1F3044;
+  color: #d9b45e;;
   }
 
 footer p {
     padding-top: 5px;
-  }
+}

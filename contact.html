@@ -19,62 +19,64 @@
   </head>
 
   <body class="preload">
+    <div class="page-container">
+      <div class="content-wrapper">
+        <section class="top">
+          <section class="grid_top">
+            <header>
+              <a href="index.html"><img src="assets/logo/logo_gold.svg" alt="logo"></a>
+            </header>
 
-    <section class="top">
-      <section class="grid_top">
-        <header>
-          <a href="index.html"><img src="assets/logo/logo_gold.svg" alt="logo"></a>
-        </header>
+            <nav>
+              <ul>
+                <li><a href="index.html" class="preload" id="animation1">Home</a></li>
+                <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
+                <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
+              </ul>
+            </nav>
+          </section>
+        </section>
 
-        <nav>
-          <ul>
-            <li><a href="index.html" class="preload" id="animation1">Home</a></li>
-            <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
-            <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
-          </ul>
-        </nav>
-      </section>
-    </section>
+        <section class="wrapper">
+          <section class="grid">
+            <div class="title">
+              <h2>KONTAKT</h2>
+            </div>
+            
+            <i class="fas fa-home fa-lg icon-1"></i>
+            <p class="address-1">Obrońców Chorzowa 2<br>
+                41-506 Chorzów
+            </p>
+            
+            <i class="fas fa-home fa-lg icon-2"></i>
+            <p class="address-2">Plebiscytowa 1<br>
+                44-100 Gliwice
+            </p>
 
-    <section class="wrapper">
-      <section class="grid">
-        <div class="title">
-          <h2>KONTAKT</h2>
+            <i class="fas fa-phone fa-lg icon-3"></i>
+            <p class="telephone-number">+48 601 58 40 40</p>
+          </section>
+
+          <section class="form">
+            <form method="post" action="PHP/email.php">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" name="name" id="name" value="Michal">
+              <label for="mail">E-mail</label>
+              <input type="email" name="email" id="mail" value="wiltosz@gmail.com">
+              <label for="title">Temat wiadomości</label>
+              <input type="text" name="title" id="title" value="dla doroty">
+              <label for="message">Treść wiadomości</label>
+              <textarea type="text" name="message" id="message" value="kocham cie"></textarea> 
+              <input type="submit" value="WYŚLIJ" id="button">
+            </form>
+          </section>
+        </section>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+      </div>
+        <footer>
+          <p>All rights reserved</p>
+        </footer>
         </div>
-        
-        <i class="fas fa-home fa-lg icon-1"></i>
-        <p class="address-1">Obrońców Chorzowa 2<br>
-            41-506 Chorzów
-        </p>
-        
-        <i class="fas fa-home fa-lg icon-2"></i>
-        <p class="address-2">Plebiscytowa 1<br>
-            44-100 Gliwice
-        </p>
-
-        <i class="fas fa-phone fa-lg icon-3"></i>
-        <p class="telephone-number">+48 601 58 40 40</p>
-      </section>
-
-      <section class="form">
-        <form method="post" action="PHP/email.php">
-          <label for="name">Imię i nazwisko</label>
-          <input type="text" name="name" id="name" value="Michal">
-          <label for="mail">E-mail</label>
-          <input type="email" name="email" id="mail" value="wiltosz@gmail.com">
-          <label for="title">Temat wiadomości</label>
-          <input type="text" name="title" id="title" value="dla doroty">
-          <label for="message">Treść wiadomości</label>
-          <textarea type="text" name="message" id="message" value="kocham cie"></textarea> 
-          <input type="submit" value="WYŚLIJ" id="button">
-        </form>
-      </section>
-    </section>
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-  	<footer>
-			<p>All rights reserved</p>
-		</footer>
-
     <script src="JavaScript/navigation_animation.js"></script>
     <script src="JavaScript/form.js"></script>
     <script src="JavaScript/googleMap.js"></script>

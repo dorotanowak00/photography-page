@@ -18,74 +18,78 @@
   </head>
 
   <body>
-    <section class="top">
-      <section class="grid_top">
-        <header>
-          <a href="index.html"><img src="assets/logo/logo_gold.svg" alt="logo"></a>
-        </header>
+    <div class="page-container">
+      <div class="content-wrapper">
+        <section class="top">
+          <section class="grid_top">
+            <header>
+              <a href="index.html"><img src="assets/logo/logo_gold.svg" alt="logo"></a>
+            </header>
 
-        <nav>
-          <ul>
-            <li><a href="index.html" class="preload" id="animation1">Home</a></li>
-            <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
-            <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
-          </ul>
-        </nav>
-      </section>
-    </section>
+            <nav>
+              <ul>
+                <li><a href="index.html" class="preload" id="animation1">Home</a></li>
+                <li><a href="gallery.html" class="preload" id="animation2">Galeria</a></li>
+                <li><a href="contact.html" class="preload" id="animation3">Kontakt</a></li>
+              </ul>
+            </nav>
+          </section>
+        </section>
 
-    <section class="wrapper">
-      <section class="about_us">
-        <h2>Czym się zajmujemy?</h2>
-        <p>Jesteśmy firmą działającą na terenie Katowic i Gliwic, zajmujemy się fotografią produktową, fotografią typu packshot oraz sesjami z modelami. Będzie nam niezwykle miło świadczyć dla Państwa usługi, zapraszamy do zapoznania się z naszą ofertą oraz portfolio.</p>
-      </section>
+        <section class="wrapper">
+          <section class="about_us">
+            <h2>Czym się zajmujemy?</h2>
+            <p>Jesteśmy firmą działającą na terenie Katowic i Gliwic, zajmujemy się fotografią produktową, fotografią typu packshot oraz sesjami z modelami. Będzie nam niezwykle miło świadczyć dla Państwa usługi, zapraszamy do zapoznania się z naszą ofertą oraz portfolio.</p>
+          </section>
 
-      <section class="grid">
+        <section class="grid">
 
-        <div class="item1">
-          <h3>zdjęcia na białym tle</h3>
-          <p>Klasyczna fotografia typu packshot, zdjęcia tego typu są pożądane przez większość platform aukcyjnych czy e-commerce takich jak: Allegro, Amazon, Ebay.</p>
-        </div>
-
-        <div id="gallery_wrap1"  class="item2">
-          <div id="gallery_white">
-            <img src="assets/home/white/img1.jpg" alt="img1" onload="gallery('white')" id="images_white">
+          <div class="item1">
+            <h3>zdjęcia na białym tle</h3>
+            <p>Klasyczna fotografia typu packshot, zdjęcia tego typu są pożądane przez większość platform aukcyjnych czy e-commerce takich jak: Allegro, Amazon, Ebay.</p>
           </div>
-          <button class="prev" onclick="prev('white')">&#10092</button>
-          <button class="next" onclick="next('white')">&#10093</button>
-        </div>
 
-        <div  class="item3">
-          <h3>zdjęcia stylizowane</h3>
-          <p>Dla klientów szukających bardziej spersonalizowanego produktu oferujemy sesje stylizowane – szukasz sesji w stylu urbex? A może delikatnej i kobiecej w stylu boho? Skontaktuj się z nami, pomożemy!</p>
-        </div>
-
-        <div id="gallery_wrap2" class="item4">
-          <div id="gallery_stylized">
-            <img src="assets/home/stylized/img1.jpg" alt="img2" onload="gallery('stylized')" id="images_stylized">
+          <div id="gallery_wrap1"  class="item2">
+            <div id="gallery_white">
+              <img src="assets/home/white/img1.jpg" alt="img1" onload="gallery('white')" id="images_white">
+            </div>
+            <button class="prev" onclick="prev('white')">&#10092</button>
+            <button class="next" onclick="next('white')">&#10093</button>
           </div>
-          <button class="prev" onclick="prev('stylized')">&#10092</button>
-          <button class="next" onclick="next('stylized')">&#10093</button>
-        </div>
-      
-        <div class="item5">
-          <h3>zdjęcia z modelem</h3>
-          <p>W naszej ofercie mamy również sesje z modelkami i modelami. Możemy przedstawić Państwa produkt w naturalnym otoczeniu bądź w stylizowanej sesji w studiu – wybór należy do Was!</p>
-        </div>
 
-        <div id="gallery_wrap3" class="item6">
-          <div id="gallery_model">
-            <img src="assets/home/model/img1.jpg" alt="img3" onload="gallery('model')" id="images_model">
+          <div  class="item3">
+            <h3>zdjęcia stylizowane</h3>
+            <p>Dla klientów szukających bardziej spersonalizowanego produktu oferujemy sesje stylizowane – szukasz sesji w stylu urbex? A może delikatnej i kobiecej w stylu boho? Skontaktuj się z nami, pomożemy!</p>
           </div>
-          <button class="prev" onclick="prev('model')">&#10092</button>
-          <button class="next" onclick="next('model')">&#10093</button>
-        </div>
 
+          <div id="gallery_wrap2" class="item4">
+            <div id="gallery_stylized">
+              <img src="assets/home/stylized/img1.jpg" alt="img2" onload="gallery('stylized')" id="images_stylized">
+            </div>
+            <button class="prev" onclick="prev('stylized')">&#10092</button>
+            <button class="next" onclick="next('stylized')">&#10093</button>
+          </div>
+        
+          <div class="item5">
+            <h3>zdjęcia z modelem</h3>
+            <p>W naszej ofercie mamy również sesje z modelkami i modelami. Możemy przedstawić Państwa produkt w naturalnym otoczeniu bądź w stylizowanej sesji w studiu – wybór należy do Was!</p>
+          </div>
+
+          <div id="gallery_wrap3" class="item6">
+            <div id="gallery_model">
+              <img src="assets/home/model/img1.jpg" alt="img3" onload="gallery('model')" id="images_model">
+            </div>
+            <button class="prev" onclick="prev('model')">&#10092</button>
+            <button class="next" onclick="next('model')">&#10093</button>
+          </div>
+
+        </section>
       </section>
-  </section>
+    </div>  
     <footer>
 			<p>All rights reserved</p>
 		</footer>
+    </div>
     <script src="JavaScript/gallery.js"></script>
   </body>
 

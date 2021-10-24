@@ -12,7 +12,8 @@
 
 div.wrapper {
   width: 95vw;
-  margin: 120px auto 0;
+  padding-top: 120px;
+  margin: 0 auto 0;
 }
 
 h2.title {
@@ -133,7 +134,7 @@ a.img_background:hover {
 
 @media (min-width: 768px) {
   div.wrapper {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 
@@ -148,13 +149,11 @@ a.img_background:hover {
   }
 
   div.img_container {
-    width: calc(33% - 8px); /* 33% - (2*12px/3) */
-    margin-right: 12px;
+    width: calc(33% - 12px); /* 33% - (3*12px/3) */
+    margin-right: 6px;
+    margin-left: 6px;
   }
 
-  div.img_container:nth-child(3n) {
-    margin-right: 0;
-  }
 
 }
 
