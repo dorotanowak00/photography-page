@@ -14,8 +14,8 @@ body {
 /* OPISY */
 
 .wrapper {
+  margin: 100px auto 0;
   width: 95vw;
-  margin: auto;
 }
 
 section.about_us {
