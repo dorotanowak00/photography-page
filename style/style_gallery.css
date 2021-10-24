@@ -20,6 +20,7 @@ h2.title {
   font-size: 18px;
   font-weight: 300;
   margin: 20px auto;
+  color: #1F3044;
 }
 
 section.selection_buttons {
@@ -27,7 +28,8 @@ section.selection_buttons {
 }
 
 section.selection_buttons button {
-  background-color: rgb(94, 94, 94);
+  /* background-color: rgb(94, 94, 94); */
+  background-color: #1F3044;
   color: white;
   font-size: 12px;
   border: none;
@@ -97,7 +99,7 @@ a.img_background:hover {
 
   h2.title {
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   section.selection_buttons button {
