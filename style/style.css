@@ -107,18 +107,6 @@ section.grid img {
   background-color: rgba(225, 225, 208, 0.5);
 }
 
-footer {
-  height: 35px;
-  margin-top:50px;
-  text-align: center;
-  background-color: lightgrey;
-}
-
-footer p {
-  padding-top: 5px;
-}
-
-
 
 /* ---media queries--- */
 
