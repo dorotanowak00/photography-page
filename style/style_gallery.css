@@ -118,13 +118,9 @@ a.img_background:hover {
   }
 
   div.img_container {
-    width: calc(50% - 5px);
+    width: calc(50% - 10px);
     float: left;
-    margin-bottom: 10px;
-  }
-
-  div.img_container:nth-child(odd) {
-    margin-right: 10px;
+    margin: 0 5px 10px 5px;
   }
 
   a.img_background {
