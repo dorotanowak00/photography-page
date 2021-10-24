@@ -6,80 +6,13 @@
 }
 
 
-a.preload {
-animation-duration: 0s !important;
--webkit-animation-duration: 0s !important;
-transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
-
-section.page_top {
-  text-align: center;
-}
-
-header h1 {
-font-size: 17px;
-  padding: 10px 20px 10px 20px;
-  color: #3C3F66;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-nav ul {
-  font-size: 13px;
-  list-style-type: none;
-  padding: 10px;
-}
-
-nav li {
-  display: inline;
-  padding: 0 10px;
-  }
-
-nav a {
-  text-decoration: none;
-  font-family: "Arial";
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: grey;
-}
-
-
-nav a {
-  animation: nav_animation_reverse 0.5s ease;
-}
-
-nav a:hover {
-  color: #3C3F66;
-  border-bottom: 2px solid rgb(179, 175, 182);
-  animation: nav_animation 0.5s ease;
-}
-
-
-@keyframes nav_animation {
-  from {border-bottom: solid 2px rgba(179, 175, 182, 0);
-        padding-bottom: 5px;
-  }
-  to {border-bottom: solid 2px rgba(179, 175, 182, 1);
-      padding-bottom: 0px;
-  }
-}
-
-@keyframes nav_animation_reverse {
-  from {border-bottom: solid 2px rgba(179, 175, 182, 1);
-        padding-bottom: 0px;
-  }
-  to {border-bottom: solid 2px rgba(179, 175, 182, 0);
-      padding-bottom: 5px;
-  }
-}
-
 
 /* BUTTONS */
 
 
 div.wrapper {
   width: 95vw;
-  margin: auto;
+  margin: 120px auto 0;
 }
 
 h2.title {
@@ -175,9 +108,6 @@ footer p {
 
 @media (min-width: 540px) {
   
-  header h1 {
-    font-size: 20px;
-  }
 
   h2.title {
     font-size: 30px;
@@ -217,29 +147,13 @@ footer p {
 
 }
 
+@media (min-width: 768px) {
+  div.wrapper {
+    margin-top: 100px;
+  }
+}
+
 @media (min-width: 992px) {
-
-  .top {
-    height: 80px;
-  }
-
-  .grid_top {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 450px 450px;
-    max-width: 915px;
-    grid-column-gap: 15px;
-    padding-top: 10px;
-  }
-
-  .top h1 {
-    padding: 3px 0 10px;
-  }
-
-  
-  nav ul {
-    font-size: 15px;
-  }
 
   div.wrapper {
     width: 85vw;
@@ -259,9 +173,6 @@ footer p {
   }
 
 }
-
-
-
 
 .clearfix::after {
   content: "";
