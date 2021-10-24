@@ -26,6 +26,7 @@ h2.title {
   font-size: 18px;
   font-weight: 300;
   margin: 20px auto;
+  color: #D9B45E;
 }
 
 
@@ -119,7 +120,7 @@ div#modal span:hover {
 
   h2.title {
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
   }
 
   div.wrapper {
