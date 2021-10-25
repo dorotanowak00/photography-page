@@ -83,6 +83,10 @@ textarea {
   resize: none;
 }
 
+div#response {
+  text-align: center;
+}
+
 input:focus, textarea:focus {
     outline-width: 0;
     outline-color: #1F3044;

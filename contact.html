@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="style/navigation.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/style_contact.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
   </head>
 
@@ -58,7 +60,7 @@
           </section>
 
           <section class="form">
-            <form method="post" action="PHP/email.php">
+            <form method="post" action="PHP/email.php" id="form">
               <label for="name">Imię i nazwisko</label>
               <input type="text" name="name" id="name">
               <label for="mail">E-mail</label>
@@ -69,6 +71,7 @@
               <textarea type="text" name="message" id="message"></textarea> 
               <input type="submit" value="WYŚLIJ" id="button">
             </form>
+            <div id="response"></div>
           </section>
         </section>
         <div id="googleMap" style="width:100%;height:400px;"></div>
@@ -76,7 +79,32 @@
         <footer>
           <p>All rights reserved</p>
         </footer>
-        </div>
+      </div>
+
+    <script>
+      $("#button").click( function() {
+      
+        $.post( $("#form").attr("action"),
+                $("#form :input").serializeArray(),
+          function(info) {
+    
+            $("#response").empty();
+            $("#response").html(info);
+      
+          });
+        
+        $("#form").submit( function() {
+            return false;
+        });
+
+        $(':input','#form')
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .prop('checked', false)
+        .prop('selected', false);
+
+      });
+    </script>
     <script src="JavaScript/navigation_animation.js"></script>
     <script src="JavaScript/form.js"></script>
     <script src="JavaScript/googleMap.js"></script>
