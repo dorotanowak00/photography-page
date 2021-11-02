@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 /* BUTTONS */
 
 
@@ -52,8 +50,6 @@ section.selection_buttons button:hover {
 div.images {
   margin-top: 10px;
 }
-
-
 
 div.img_container {
   color: transparent;
@@ -153,8 +149,6 @@ a.img_background:hover {
     margin-right: 6px;
     margin-left: 6px;
   }
-
-
 }
 
 .clearfix::after {
@@ -163,3 +157,22 @@ a.img_background:hover {
   display: table;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:rgba(221, 216, 216, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
