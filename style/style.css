@@ -117,7 +117,6 @@ section.grid img {
     width: 85vw;
   }
 
-
 }
 
 @media (min-width: 768px) {
@@ -133,6 +132,7 @@ section.grid img {
 
   .wrapper {
     width: 75vw;
+    margin-top: 120px;
   }
 
   section.about_us {
@@ -189,4 +189,23 @@ section.grid img {
 }
 
 
+/* key frames */
 
+@keyframes animation {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.animation {
+  animation: animation 1s; /*oryginalnie 1.5s*/
+  opacity: 0;
+}
+
+@keyframes animation2 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animation2 {
+  animation: animation2 1.5s;/*oryginalnie 2s*/
+}

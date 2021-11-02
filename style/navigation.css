@@ -139,23 +139,3 @@ a {
 
 }
 
-/* key frames */
-
-@keyframes animation {
-    from {opacity: 1;}
-    to {opacity: 0;}
-  }
-  
-.animation {
-    animation: animation 5s; /*oryginalnie 1.5s*/
-    opacity: 0;
-}
-  
-@keyframes animation2 {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-  
-.animation2 {
-    animation: animation2 5s;/*oryginalnie 2s*/
-}
