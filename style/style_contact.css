@@ -23,6 +23,10 @@ section.wrapper {
 .icon-3 {grid-area: icon-3;}
 .telephone-number {grid-area: telephone-number;}
 
+.bold {
+  font-weight: 500;
+}
+
 .grid {
   margin: auto;
   display: grid;
@@ -168,7 +172,7 @@ div.content-wrapper {
  section.wrapper {
     width: 75vw;
     grid-template-columns: max-content auto;
-    grid-column-gap: 15px;
+    grid-column-gap: 80px;
   }
 
   .form {
@@ -180,9 +184,14 @@ div.content-wrapper {
     padding-right: 10px;
   }
 
-  input, textarea, input#button {
+  input, input#button {
     width: 100%;
     height: 32px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
   }
 
   label {
