@@ -81,6 +81,8 @@ section.grid img {
 #gallery_wrap2,
 #gallery_wrap3 {
   position: relative;
+  max-width: 470px;
+  margin: auto;
 }
 
 .prev, .next {
