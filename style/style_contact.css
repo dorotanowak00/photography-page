@@ -109,7 +109,7 @@ input#button {
   font-weight: 300;
 }
 
-input#button:hover {
+input#button:active {
   background-color: darkgrey;
   transition: background-color 0.5s;
   cursor: pointer;
@@ -135,6 +135,13 @@ div.content-wrapper {
 
 /* ---media queries--- */
 
+@media (hover: hover) and (pointer: fine) {
+  input#button:hover {
+    background-color: darkgrey;
+    transition: background-color 0.5s;
+    cursor: pointer;
+  }
+}
 
 @media (min-width: 540px) {
   section.wrapper {

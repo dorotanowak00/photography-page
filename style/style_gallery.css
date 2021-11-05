@@ -39,10 +39,9 @@ section.selection_buttons button {
   transition: .4s;
 }
 
-section.selection_buttons button:hover {
+section.selection_buttons button:active {
   cursor: pointer;
   background-color: rgba(102, 102, 102, 0.7);
-  
 }
 
 /* IMAGES */
@@ -84,12 +83,24 @@ a.img_background p {
   top: 50%;
 }
 
-a.img_background:hover {
+a.img_background:active {
   cursor: pointer;
   opacity: 1;
 }
 
 /* MEDIA QUERIES */
+
+@media (hover: hover) and (pointer: fine) {
+  section.selection_buttons button:hover {
+    cursor: pointer;
+    background-color: rgba(102, 102, 102, 0.7);
+  }
+
+  a.img_background:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
 
 @media (min-width: 540px) {
   

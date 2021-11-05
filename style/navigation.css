@@ -46,7 +46,7 @@ nav li {
     padding: 0 10px;
 }
 
-nav:hover {
+nav:active {
     cursor: pointer;
 }
 
@@ -60,7 +60,7 @@ nav a {
     color: #d9b45e;
 }
 
-nav a:hover {
+nav a:active {
     color: #d9b45ea4;
     border-bottom: 2px solid rgba(217, 180, 94, .8);
     animation: nav_animation 0.5s ease;
@@ -85,6 +85,19 @@ a {
     }
     to {border-bottom: solid 2px rgba(217, 180, 94, 0);
     padding-bottom: 5px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    nav:hover {
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        color: #d9b45ea4;
+        border-bottom: 2px solid rgba(217, 180, 94, .8);
+        animation: nav_animation 0.5s ease;
     }
 }
 

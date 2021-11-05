@@ -44,7 +44,7 @@ div.images img {
   margin-bottom: 10px;
 }
 
-div.images img:hover {
+div.images img:active {
   cursor: pointer;
 }
 
@@ -96,7 +96,7 @@ button.next {
   right: -10vw;
 }
 
-div#modal button:hover {
+div#modal button:active {
   cursor: pointer;
 }
 
@@ -108,12 +108,26 @@ div#modal span {
   font-size: 35px;
 }
 
-div#modal span:hover {
+div#modal span:active {
   cursor: pointer;
 }
 
 
 /* MEDIA QUERIES */
+
+@media (hover: hover) and (pointer: fine) {
+  div.images img:hover {
+    cursor: pointer;
+  }
+
+  div#modal span:hover {
+    cursor: pointer;
+  }
+
+  div#modal button:hover {
+    cursor: pointer;
+  }
+}
 
 @media (min-width: 540px) {
   
