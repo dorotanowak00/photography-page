@@ -1,9 +1,5 @@
 <?php
-// if(!isset($_POST['submit']))
-// {
-// 	//This page should not be accessed directly. Need to submit the form.
-// 	echo "error; you need to submit the form!";
-// }
+
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $title = $_POST['title'];
@@ -22,7 +18,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'formularz@dorota-nowak.freeko.pl';//FROM
+$email_from = 'formularz@produktowa.katowice.pl';//FROM
 $email_subject = "Nowa wiadomość ze strony Fotografia Produktowa";
 $email_body = 
     "Otrzymałeś nową wiadomość od użytkownika $name.\n".
@@ -31,7 +27,7 @@ $email_body =
     "Odpowiedz: $visitor_email\n";
 
     
-$to = "dorota.nowak00@gmail.com";// TO
+$to = "wiltosz@gmail.com";// TO
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!

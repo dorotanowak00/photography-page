@@ -22,6 +22,7 @@ section.wrapper {
 .address-2 {grid-area: address-2; }
 .icon-3 {grid-area: icon-3;}
 .telephone-number {grid-area: telephone-number;}
+.mail {grid-area: mail;}
 
 .bold {
   font-weight: 500;
@@ -36,7 +37,8 @@ section.wrapper {
   'title title'
   'icon-1 address-1'
   'icon-2 address-2'
-  'icon-3 telephone-number';
+  'icon-3 telephone-number'
+  'icon-4 mail';
   grid-gap: 20px 15px;
 }
 
@@ -60,7 +62,7 @@ div.title h2 {
   font-weight: 300;
 }
 
-.icon-1, .icon-2, .icon-3 {
+.icon-1, .icon-2, .icon-3, .icon-4 {
   margin: auto;
   color: #1F3044;
 }
