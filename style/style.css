@@ -139,6 +139,8 @@ section.grid img {
 
   section.about_us {
     margin-top: -20px;
+    max-width: 1000px;
+    margin: auto;
   }
 
   section.about_us h2 {
@@ -168,6 +170,7 @@ section.grid img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px 5px;
+    max-width: 1000px;
   }
 
   section.grid h3 {
