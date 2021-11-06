@@ -2,6 +2,15 @@ let imagesCollection = document.getElementsByClassName('image');
 let images = Array.from(imagesCollection);
 
 
+function remove(className) {
+    let removedElement = document.getElementsByClassName(className)[0];
+    console.log(removedElement);
+    removedElement.remove();
+
+}
+
+
+
 function openModal(src, id) {
    
     let modal = document.getElementById('modal');
@@ -20,14 +29,14 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-function prev() {
-    console.log('prev');
-}
-
 function next() {
     let modal = document.getElementById('modal');
-    let currentImgId = document.getElementById('modal').firstElementChild.firstElementChild.id;
 
+    let currentImg = document.getElementById('modal').firstElementChild.firstElementChild;
+    let currentImgId = currentImg.id;
+    let currentImgSrc = currentImg.src;
+
+    let nextImg;
     let nextImgId;
     let nextImgSrc;
 
@@ -39,24 +48,31 @@ function next() {
 
     for (let i = 0; i < images.length; i++) {
         if(images[i].id == nextImgId) {
+            nextImg = images[i];
             nextImgSrc = images[i].src;
         }
     }
 
     modal.innerHTML = `
     <div class="image-container">
-        <img src="${nextImgSrc}" id="${nextImgId}" class="animation-left">
+        <img src="${currentImgSrc}" id="${currentImgId}" class="current-left">
+        <img src="${nextImgSrc}" id="${nextImgId}" class="next-left">
         <button class="prev" onclick="prev()">&#10092</button>
         <button class="next" onclick="next()">&#10093</button>
     </div>
     <span onclick="closeModal()">&#10006</span>`
     ;
+    setTimeout(() => remove('current-left'), 1000);
 }
 
 function prev() {
     let modal = document.getElementById('modal');
-    let currentImgId = document.getElementById('modal').firstElementChild.firstElementChild.id;
 
+    let currentImg = document.getElementById('modal').firstElementChild.firstElementChild;
+    let currentImgId = currentImg.id;
+    let currentImgSrc = currentImg.src;
+
+    let prevImg;
     let prevImgId;
     let prevImgSrc;
 
@@ -74,12 +90,15 @@ function prev() {
 
     modal.innerHTML = `
     <div class="image-container">
-        <img src="${prevImgSrc}" id="${prevImgId}">
+        <img src="${currentImgSrc}" id="${currentImgId}" class="current-right">
+        <img src="${prevImgSrc}" id="${prevImgId}" class="prev-right">
         <button class="prev" onclick="prev()">&#10092</button>
         <button class="next" onclick="next()">&#10093</button>
     </div>
     <span onclick="closeModal()">&#10006</span>`
     ;
+
+    setTimeout(() => remove('current-right'), 1000);
 }
 
 images.forEach(item => {

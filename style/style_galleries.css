@@ -64,9 +64,9 @@ div#modal {
 }
 
 div.image-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   position: absolute;
   width: 80vw;
   height: 100vh;
@@ -77,12 +77,67 @@ div.image-container {
 
 div#modal img {
   object-fit: contain;
-  margin: auto;
+  /* margin: auto; */
   height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* max-width: 80vw;
   max-height: 100vh; */
   display: block;
-  
+}
+
+img.current-left {
+  animation: current-left 1s ease;
+}
+
+img.next-left {
+  animation: next-left 1s ease;
+}
+
+@keyframes current-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes next-left {
+  from {
+    left: 200%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+img.current-right {
+  animation: current-right 1s ease;
+}
+
+img.prev-right {
+  animation: prev-right 1s ease;
+}
+
+@keyframes current-right {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 200%;
+  }
+}
+
+@keyframes prev-right {
+  from {
+    left: -150%;
+  }
+  to {
+    left: 50%;
+  }
 }
 
 div#modal button {
