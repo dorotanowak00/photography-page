@@ -81,6 +81,15 @@ function prev() {
     ;
 }
 
+document.addEventListener('keydown', e => {
+    if (e.keyCode === 39) {
+        next();
+    }
+    if (e.keyCode === 37) {
+        prev();
+    }
+})
+
 
 window.addEventListener('click', (e) => {
     if (e.target == modal) {
