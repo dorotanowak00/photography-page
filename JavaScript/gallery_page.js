@@ -88,6 +88,9 @@ document.addEventListener('keydown', e => {
     if (e.keyCode === 37) {
         prev();
     }
+    if (e.keyCode === 27) {
+        modal.style.display = "none";
+    }
 })
 
 
