@@ -1,4 +1,5 @@
-let images = document.getElementsByClassName('image');
+let imagesCollection = document.getElementsByClassName('image');
+let images = Array.from(imagesCollection);
 
 
 function openModal(src, id) {
@@ -80,6 +81,12 @@ function prev() {
     <span onclick="closeModal()">&#10006</span>`
     ;
 }
+
+images.forEach(item => {
+    item.addEventListener('click', (e) => {
+        openModal(e.target.src, e.target.id)
+    });
+})
 
 document.addEventListener('keydown', e => {
     if (e.keyCode === 39) {
