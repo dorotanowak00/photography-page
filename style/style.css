@@ -145,6 +145,7 @@ section.grid img {
 
   .wrapper {
     width: 75vw;
+    max-width: 1000px;
     margin-top: 120px;
   }
 
